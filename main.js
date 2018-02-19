@@ -1,5 +1,7 @@
 const roleHarvester = require('role.harvester')
 const roleBuilder = require('role.builder')
+const roleUpgrader = require('roleUpgrader')
+
 const spawnRules = require('spawnRules')
 
 module.exports.loop = function () {
@@ -12,6 +14,8 @@ module.exports.loop = function () {
       roleHarvester.run(creep)
     } else if (creep.memory.role === 'builder') {
       roleBuilder.run(creep)
+    } else if (creep.memory.role === 'upgrader') {
+      roleUpgrader.run(creep, 'Spawn1')
     }
   }
 }
