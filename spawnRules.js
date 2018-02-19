@@ -1,7 +1,7 @@
-const simpleConfig = [WORK, CARRY, MOVE, MOVE]
-const minHarvesters = 2
+const simpleConfig = [WORK, WORK, CARRY, MOVE]
+const minHarvesters = 3
 const minUpgraders = 3
-const minBuilders = 1
+const minBuilders = 2
 
 const rules = {
   check (spawnName) {
