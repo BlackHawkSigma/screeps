@@ -6,7 +6,7 @@ const rules = {
   check (spawnName) {
     const harvesters = _.filter(Game.creeps, c => c.memory.role === 'harvester')
 
-    if (harvester.lenght < minHarvesters) {
+    if (harvesters.lenght < minHarvesters) {
       Game.spawns[spawnName].spawnCreep(harvesterConfig, `Harvester${Game.time}`, {
         memory: {role: 'harvester'}
       })
